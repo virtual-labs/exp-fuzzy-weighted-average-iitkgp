@@ -2,35 +2,34 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The membership functions are generally represented in?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Tabular Form",
+        "b": "Graphical Form",
+        "c": "Mathematical Form",
+        "d": "Logical Form"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Membership function can be thought of as a technique to solve empirical problems on the basis of?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Knowledge",
+        "b": "Examples",
+        "c": "Learning",
+        "d": "Experience"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Three main basic features involved in characterizing membership function are?",
+      "answers": {
+        "a": "Intution, Inference, Rank Ordering",
+        "b": "Fuzzy Algorithm, Neural network, Genetic Algorithm",
+        "c": "Core, Support , Boundary",
+        "d": "Weighted Average, center of Sums, Median"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
