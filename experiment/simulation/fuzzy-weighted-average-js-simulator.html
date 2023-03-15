@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="js/math.min.js">
+</script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/fwa.css">
+</head>
+<body onload="canvas11();canvas22();canvas33();canvas44();canvas55();canvas66();">
+<div class="wrapper">
+   		<div class="upperSection">
+   		<div class="upperupperSection">
+	           <b>Fuzzy Weighted Average</b>
+		</div>  <!---------------------- end of .upperupperSection------------------->
+   		<div class="upperlowerSection">
+			        <div class="dropdown">
+                    INSTRUCTION
+                    <div class="dropdown-content">
+                        <ol type="1">
+                            <li>Click on Pressure canvas and a popup will arise.</li>
+							<li>Enter the pmin and pmax value and then press ok.</li>
+							<li>Go to pressure weight canvas.</li>
+							<li>Select 2 points from X-axis.</li>
+                            <li>Similarlly click on Temperature and Temperature Weight canvas.</li>
+                            <li>Similarlly click on Flowrate and Flowrate Weight canvas.</li>
+                            <li>After taking the respective points click on "RESULT" Button.</li>
+                            <li>Next Click on "HOW" button to know the procedure of calculation.</li>
+                            <li>To clear the result click on "ClEAR" button.</li>
+                        </ol> 
+                </div><!---------------------end of dropdown-content------------------------>
+             </div><!---------------------end of dropdown------------------------>			  			
+		</div>  <!---------------------- end of .upperlowerSection------------------->
+		</div>  <!---------------------- end of .upperSection------------------->
+   		<div class="middleSection">
+			      <div class="middleleftSection">
+   		                   <div class="middleleftupperSection">
+							   <div class="canvas2d-view" id="canvas2d-view">
+							   		<div id="divv1"></div>
+								  <center><div id="divv7"></div></center>
+								<canvas id="mycanvas1" width="432px" height="108px"></canvas> 
+								  <div id="divv13"></div>
+							  </div>
+<!--						     <output id="out1"></output>
+-->							  <div style="color:black;font-size:15px;text-align:center; margin-right:85px;"><b>Pressure(kPa)</b></div>		  
+		          			</div>	
+							<!--------------- end of .middleleftupperSection----------------------->   
+   		                   <div class="middleleftmiddleSection">
+							   <div class="canvas2d-view" id="canvas2d-view">
+							   		<div id="divv2"></div>
+								  <center><div id="divv8"></div></center>	  
+								<canvas id="mycanvas2" width="432px" height="108px"></canvas> 
+								  <div id="divv14"></div>
+							  </div>
+<!-- 							  <output id="out1"></output>
+-->							  <div style="color:black;font-size:15px;text-align:center; margin-right:85px;"><b>Temperature(C)</b></div>	  
+		          			</div>	
+							<!--------------- end of .middleleftmiddleSection----------------------->   
+						   		
+		                   <div class="middleleftlowerSection">
+		                          <div class="canvas2d-view" id="canvas2d-view"> 
+								     <div id="divv3"></div> 
+								  <center><div id="divv9"></div></center>
+            		                      <canvas id="mycanvas3" width="432px" height="108px"> </canvas>
+								  <div id="divv15"></div>
+								  </div>	
+<!--								   <output id="out2"></output>
+-->									<div style="color:black;font-size:15px;text-align:center; margin-right:85px;"><b>Flow rate(gph)</b></div>	  
+		                   </div>	
+						   <!--------------- end of .middleleftlowerSection----------------------->
+	              </div><!--------------- end of .middleleftSection----------------------->
+				  
+		          <div class="middlemiddleSection">
+		                 <div class="middlemiddleSection1">
+						 </div>
+				  </div>
+				  <!--------------- end of .middlemiddleSection----------------------->
+		          <div class="middlerightSection">
+   		                   <div class="middlerightupperSection">
+							   <div class="canvas2d-view" id="canvas2d-view">
+							   		<div id="divv4"></div>
+								  <center><div id="divv10"></div></center>
+								<canvas id="mycanvas4" width="432px" height="108px"></canvas> 
+								  <div id="divv16"></div>
+							  </div>
+							  
+<!--						     <output id="out1"></output>
+-->							  <div style="color:black;font-size:14px;text-align:center; margin-right:85px;"><b>Pressure Weight</b></div>		  
+		          			</div>	
+							<!--------------- end of .middlerightupperSection----------------------->   
+   		                   <div class="middlerightmiddleSection">
+							   <div class="canvas2d-view" id="canvas2d-view">
+							   		<div id="divv5"></div>
+								  <center><div id="divv11"></div></center>	  
+								<canvas id="mycanvas5" width="432px" height="108px"></canvas> 
+								  <div id="divv17"></div>
+							  </div>
+<!-- 							  <output id="out1"></output>
+-->							  <div style="color:black;font-size:14px;text-align:center; margin-right:85px;"><b>Temperature Weight</b></div>		  
+		          			</div>	
+							<!--------------- end of .middlerightmiddleSection----------------------->   
+						   		
+		                   <div class="middlerightlowerSection">
+		                          <div class="canvas2d-view" id="canvas2d-view"> 
+								     <div id="divv6"></div> 
+								  <center><div id="divv12"></div></center>
+            		                      <canvas id="mycanvas6" width="432px" height="108px"> </canvas>
+								  <div id="divv18"></div>
+							  </div>	
+<!--								   <output id="out2"></output>
+-->									<div style="color:black;font-size:14px;text-align:center; margin-right:85px;"><b>Flowrate Weight</b></div>		  
+		                   </div>	
+						   <!--------------- end of .middlerightlowerSection----------------------->
+                     </div>
+					<!--------------- end of .middlerightSection----------------------->
+              </div>
+			<!--------------- end of .middleSection----------------------->
+ 		                   <div class="lowerSection">
+					        <div class="btn"> 
+						  		<ul>
+									<li><input type="button"  id="rslt" name="Result" value="RESULT"  disabled="true" onclick="pwa();twa();fwa();"></li>
+									<li><input type="button"  id="how" value="HOW"  disabled="disabled" onclick="howpwa();howtwa();howfwa();"></li>
+									<li><input type="button" id="clr" name="Clear" value="CLEAR" ></li>							
+								</ul>
+								</div ><!---------------------end of btn------------------------>
+								<div id="btn1">
+									<span class="result1"></span><br>
+									<span class="result2"></span><br>
+									<span class="result3"></span><br>
+	                          	<div class="clearfix"></div>
+								</div>
+                            </div>
+<!--												  <output id="out3"></output>
+-->		                   </div>	<!--------------- end of .lowerSection----------------------->  
+            <footer class="default" id="lab-footer">
+                <!-- Put the content here-->
+                <div style="margin-left:25%; margin-right:10% ">
+                    Copyright &copy; 2008-2016 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+                </div>
+            </footer>
+ 		
+</div><!-- end of .wrapper -->
+<!--<button onClick="openPopup();">click here</button>
+-->
+<div id="test1" class="popup1">
+    <div class="cancel1" onclick="closePopup1();"></div>
+    Pressure Parameters<br/><br/>	
+<form>
+	Pressure(Min.)&nbsp;
+<input type="text" name="field[]" id="pmin" class="textbox"  size="2px"/><br/><br/>
+	Pressure(Max.)
+	<input type="text" name="field[]" id="pmax" class="textbox"  size="2px"/><br/>
+	</form><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="removebutton" value="Ok" onclick="pressureok();"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="addbutton" value="Clear" onclick="pressureclear();"/>
+
+</div>
+<div id="test2" class="popup2">
+    <div class="cancel2" onclick="closePopup2();"></div>
+    Temperature Parameters<br/><br/>
+<form>
+	Temperature(Min.)&nbsp;
+<input type="text" name="field[]" id="tmin" class="textbox"  size="2px"/><br/><br/>
+	Temperature(Max.)
+	<input type="text" name="field[]" id="tmax" class="textbox"  size="2px"/><br/>
+	</form><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="removebutton" value="Ok" onclick="temperatureok();"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="addbutton" value="Clear" onclick="temperatureclear();"/>
+</div>
+<div id="test3" class="popup3">
+    <div class="cancel3" onclick="closePopup3();"></div>
+    Flowrate Parameters<br/><br/>
+<form>
+	Flowrate(Min.)&nbsp;
+<input type="text" name="field[]" id="fmin" class="textbox"  size="2px"/>	<br/><br/>
+	Flowrate(Max.)
+	<input type="text" name="field[]" id="fmax" class="textbox"  size="2px"/><br/>
+	</form><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="removebutton" value="Ok" onclick="flowrateok();"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="addbutton" value="Clear" onclick="flowrateclear();"/>
+</div>
+</body>
+<script type="text/javascript">
+var allow1 = false;
+var allow2 = false;
+var allow3 = false;
+var allow4 = false;
+var allow5 = false;
+var allow6 = false;
+</script>
+<script src ="js/fwacan1.js"></script>
+<script src ="js/fwacan2.js"></script>
+<script src ="js/fwacan3.js"></script>
+<script src ="js/fwacan4.js"></script>
+<script src ="js/fwacan5.js"></script>
+<script src ="js/fwacan6.js"></script>
+<script src ="js/result.js"></script>
+<script src ="js/how.js"></script>
+</html>
