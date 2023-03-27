@@ -1,0 +1,38 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The membership functions are generally represented in?",
+      "answers": {
+        "a": "Tabular Form",
+        "b": "Graphical Form",
+        "c": "Mathematical Form",
+        "d": "Logical Form"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Membership function can be thought of as a technique to solve empirical problems on the basis of?",
+      "answers": {
+        "a": "Knowledge",
+        "b": "Examples",
+        "c": "Learning",
+        "d": "Experience"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Three main basic features involved in characterizing membership function are?",
+      "answers": {
+        "a": "Intution, Inference, Rank Ordering",
+        "b": "Fuzzy Algorithm, Neural network, Genetic Algorithm",
+        "c": "Core, Support , Boundary",
+        "d": "Weighted Average, center of Sums, Median"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
